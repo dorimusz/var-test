@@ -63,3 +63,45 @@ function getTimeNeeded(distance, car) {
 }
 
 console.log(getTimeNeeded(100, car1));
+
+
+
+
+const numbers = [1, 4, 16];
+const strings = ["Máté", "Péter", "Timi", "Dorcsi", "Bálint"];
+
+function getBiggerThan5(inputList) {
+    const result = [];
+    for (let i = 0; i < inputList.length; i++) {
+        if (inputList[i] > 5) {
+            result.push(inputList[i]);
+        }
+    }
+    return result;
+}
+
+let result = getBiggerThan5(numbers);
+console.log(result);
+
+function getSmallerThan10(inputList) {
+    const result = [];
+    for (let i = 0; i < inputList.length; i++) {
+        if (inputList[i] < 10) {
+            result.push(inputList[i]);
+        }
+    }
+    return result;
+}
+
+function startingWithB(inputList) {
+    const result = [];
+    for (let i = 0; i < inputList.length; i++) {
+        if (inputList[i][0] === "B") {
+            result.push(inputList[i]);
+        }
+    }
+    return result;
+}
+
+let resultString = startingWithB(strings);
+console.log(resultString);
